@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-basic';
+  public vardas: string;
+  public garbesTaskai: number = 0;
+
+  public constructor() {
+    this.vardas = "Gitanas";
+  }
+
+  public pridetiTasku(): void {
+    this.garbesTaskai++;
+  }
+
+  public atimtiTasku(): void {
+    this.garbesTaskai--;
+  }
 }
+
